@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="/Challenge Encriptador/Styles/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a>
+            <img src="./Assets/logoAlura.svg" alt="logoAlura" class="logo">
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="seccion_input">
+
+            <textarea class="input_usuario" placeholder="Ingresa el texto a aqui..." id="textoUsuario"></textarea>
+        
+            <div class="div_aviso">
+                <img src="./Assets/warning.svg" alt="imagen warning" class="imagen_warning">
+                <p class="texto_aviso">Solo letras minúsculas y sin acento</p>
+            </div>
+
+            <div class="container_botones">
+                <button onclick="encriptar();" class="boton_encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="boton_desencriptar" id="reiniciar">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="seccion_output">
+
+            <div class="container_output">
+
+                <img src="./Assets/Muñeco.svg" alt="imagenComputador" class="imagen_buscando" id="imagen">
+                <p class="no_texto" id="txt1">Lo sentimos, ningun mensaje fue encontado.</p>
+                <p class="no_texto" id="txt2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+
+            </div>
+
+            <textarea class="texto_respuesta" readonly id="textoRespuesta"></textarea>
+            <button onclick="copiar()" class="boton_copiar" id="boton_copiar_id">Copiar</button>
+        
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <p>
+            Desarrollado por Diego Villa
+        </p>
+        <div class="container_footer">
+            <a href="https://www.linkedin.com/in/villa-dominguez/" rel="">
+            <img src="./Assets/linkedin.svg" alt="logo LinkedIn" class="linkedin" width="50">
+            </a>
+            <a href="https://github.com/Diego-Villa-D" rel="">
+                <img src="./Assets/github.svg" alt="logo GitHub" class="gitHub" width="50">
+            </a>
+        </div>
+        
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
